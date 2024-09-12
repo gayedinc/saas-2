@@ -6,7 +6,6 @@
 
 .container {
   color: #212121;
-  width: 1440px;
   margin-inline: auto;
 }
 
@@ -14,11 +13,13 @@
   padding: 32px 165px 364px 115px;
   background: url("../img/saas2-background-img2.png") bottom no-repeat,
     url("../img/saas2-background-img1.png") no-repeat;
+  background-size: auto, cover;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .nav {
@@ -171,7 +172,7 @@
   margin-bottom: 0;
 }
 
-.support-text li:nth-child(2) {
+.support-text li:hover {
   padding: 32px;
   box-shadow: 0px 8px 24px 0px #00000014;
   border-radius: 20px;
@@ -528,6 +529,13 @@ button:hover {
   display: flex;
   align-items: center;
   padding: 24px 165px;
+  justify-content: space-between;
+}
+
+.footer-bottom > * {
+  flex-grow: 1;
+  flex-shrink: 0;
+  width: calc(100% / 3);
 }
 
 .footer-bottom h4 {
@@ -535,11 +543,11 @@ button:hover {
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
-  margin-left: 493px;
+  text-align: center;
 }
 
 .footer-icon {
-  margin-left: auto;
   display: flex;
   gap: 40px;
+  justify-content: end;
 }
